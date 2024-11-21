@@ -1,4 +1,4 @@
-package com.gerente.gerente.domain.Transaction;
+package com.gerente.gerente.domain.transaction;
 
 public enum TransactionType {
     INFLOW("Entrada"),

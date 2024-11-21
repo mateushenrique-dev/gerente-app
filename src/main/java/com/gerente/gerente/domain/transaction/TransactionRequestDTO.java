@@ -1,6 +1,4 @@
-package com.gerente.gerente.domain.Transaction;
-
-import java.time.LocalDateTime;
+package com.gerente.gerente.domain.transaction;
 
 public record TransactionRequestDTO(
         Long productId,

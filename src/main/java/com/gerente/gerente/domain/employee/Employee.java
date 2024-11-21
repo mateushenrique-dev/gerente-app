@@ -1,4 +1,4 @@
-package com.gerente.gerente.domain.Employee;
+package com.gerente.gerente.domain.employee;
 
 import jakarta.persistence.*;
 import lombok.Getter;

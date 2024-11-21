@@ -2,8 +2,8 @@ package com.gerente.gerente.services;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.gerente.gerente.infra.cache.UseCache;
-import com.gerente.gerente.domain.Employee.Employee;
-import com.gerente.gerente.domain.Employee.EmployeeRequestDTO;
+import com.gerente.gerente.domain.employee.Employee;
+import com.gerente.gerente.domain.employee.EmployeeRequestDTO;
 import com.gerente.gerente.exceptions.EmployeeNotFoundException;
 import com.gerente.gerente.exceptions.ExistingEmployeeException;
 import com.gerente.gerente.repositories.EmployeeRepository;

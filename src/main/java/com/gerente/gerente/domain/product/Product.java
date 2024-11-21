@@ -1,13 +1,9 @@
 package com.gerente.gerente.domain.product;
 
-import com.gerente.gerente.domain.Transaction.Transaction;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-import java.util.List;
 
 @Entity(name = "products")
 @Table(name = "products")

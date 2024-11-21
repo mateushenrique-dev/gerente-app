@@ -43,9 +43,6 @@ public class InMemoryCache<K, V> implements InMemoryCacheInterface<K, V> {
     @Override
     public Optional<V> get(K key) {
         clean();
-
-        System.out.println("Usando o cache");
-
         return Optional.ofNullable(cacheMap.get(key)).map(CacheValue::getValue);
     }
 

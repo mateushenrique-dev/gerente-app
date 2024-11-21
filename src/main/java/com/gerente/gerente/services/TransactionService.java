@@ -1,11 +1,11 @@
 package com.gerente.gerente.services;
 
 import com.gerente.gerente.infra.cache.UseCache;
-import com.gerente.gerente.domain.Employee.Employee;
-import com.gerente.gerente.domain.Transaction.Transaction;
-import com.gerente.gerente.domain.Transaction.TransactionPayment;
-import com.gerente.gerente.domain.Transaction.TransactionRequestDTO;
-import com.gerente.gerente.domain.Transaction.TransactionType;
+import com.gerente.gerente.domain.employee.Employee;
+import com.gerente.gerente.domain.transaction.Transaction;
+import com.gerente.gerente.domain.transaction.TransactionPayment;
+import com.gerente.gerente.domain.transaction.TransactionRequestDTO;
+import com.gerente.gerente.domain.transaction.TransactionType;
 import com.gerente.gerente.domain.product.Product;
 import com.gerente.gerente.exceptions.EmployeeNotFoundException;
 import com.gerente.gerente.exceptions.ProductNotFoundException;

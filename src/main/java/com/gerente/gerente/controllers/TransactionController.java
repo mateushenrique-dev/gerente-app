@@ -1,8 +1,8 @@
 package com.gerente.gerente.controllers;
 
 import com.gerente.gerente.infra.cache.Cache;
-import com.gerente.gerente.domain.Transaction.Transaction;
-import com.gerente.gerente.domain.Transaction.TransactionRequestDTO;
+import com.gerente.gerente.domain.transaction.Transaction;
+import com.gerente.gerente.domain.transaction.TransactionRequestDTO;
 import com.gerente.gerente.services.TransactionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

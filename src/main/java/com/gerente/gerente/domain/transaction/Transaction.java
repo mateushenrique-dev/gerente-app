@@ -1,6 +1,6 @@
-package com.gerente.gerente.domain.Transaction;
+package com.gerente.gerente.domain.transaction;
 
-import com.gerente.gerente.domain.Employee.Employee;
+import com.gerente.gerente.domain.employee.Employee;
 import com.gerente.gerente.domain.product.Product;
 import jakarta.persistence.*;
 import lombok.Getter;

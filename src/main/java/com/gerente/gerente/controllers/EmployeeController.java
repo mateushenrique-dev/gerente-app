@@ -1,7 +1,7 @@
 package com.gerente.gerente.controllers;
 
-import com.gerente.gerente.domain.Employee.Employee;
-import com.gerente.gerente.domain.Employee.EmployeeRequestDTO;
+import com.gerente.gerente.domain.employee.Employee;
+import com.gerente.gerente.domain.employee.EmployeeRequestDTO;
 import com.gerente.gerente.services.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
