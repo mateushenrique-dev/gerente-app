@@ -1,8 +1,8 @@
-package com.gerente.gerente.cache;
+package com.gerente.gerente.infra.cache;
 
 import java.util.Optional;
 
-public interface InMemoryCacheInterface<K, V> {
+public interface Cache<K, V> {
     void clean();
     void clear();
     boolean containsKey(K key);

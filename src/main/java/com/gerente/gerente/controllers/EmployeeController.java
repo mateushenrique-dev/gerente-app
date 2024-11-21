@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-@RequestMapping("employeers")
+@RequestMapping("employees")
 public class EmployeeController {
     @Autowired
     private EmployeeService service;

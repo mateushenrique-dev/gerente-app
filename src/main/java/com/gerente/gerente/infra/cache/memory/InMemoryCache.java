@@ -1,4 +1,4 @@
-package com.gerente.gerente.cache;
+package com.gerente.gerente.infra.cache.memory;
 
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
@@ -42,6 +42,10 @@ public class InMemoryCache<K, V> implements InMemoryCacheInterface<K, V> {
 
     @Override
     public Optional<V> get(K key) {
+        clean();
+
+        System.out.println("Usando o cache");
+
         return Optional.ofNullable(cacheMap.get(key)).map(CacheValue::getValue);
     }
 

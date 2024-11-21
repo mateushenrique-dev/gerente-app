@@ -1,5 +1,6 @@
 package com.gerente.gerente.controllers;
 
+import com.gerente.gerente.infra.cache.Cache;
 import com.gerente.gerente.domain.Transaction.Transaction;
 import com.gerente.gerente.domain.Transaction.TransactionRequestDTO;
 import com.gerente.gerente.services.TransactionService;
@@ -14,6 +15,9 @@ import java.util.List;
 public class TransactionController {
     @Autowired
     private TransactionService service;
+
+    @Autowired
+    private Cache<String, List<Transaction>> cache;
 
     @PostMapping("create")
     public ResponseEntity<Transaction> create(@RequestBody TransactionRequestDTO transaction) {

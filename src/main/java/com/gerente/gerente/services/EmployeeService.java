@@ -1,6 +1,7 @@
 package com.gerente.gerente.services;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.gerente.gerente.infra.cache.UseCache;
 import com.gerente.gerente.domain.Employee.Employee;
 import com.gerente.gerente.domain.Employee.EmployeeRequestDTO;
 import com.gerente.gerente.exceptions.EmployeeNotFoundException;
@@ -32,6 +33,7 @@ public class EmployeeService {
         return employee;
     }
 
+    @UseCache(key = "employees")
     public List<Employee> getAll() {
         return repository.findAll();
     }

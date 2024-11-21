@@ -15,12 +15,10 @@ public class Employee {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String name;
-    private Float bonus;
     private Float salary;
 
     public Employee(EmployeeRequestDTO employeeData) {
         name = employeeData.name();
-        bonus = employeeData.bonus();
         salary = employeeData.salary();
     }
 }

@@ -1,6 +1,7 @@
 package com.gerente.gerente.services;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.gerente.gerente.infra.cache.UseCache;
 import com.gerente.gerente.domain.product.Product;
 import com.gerente.gerente.domain.product.ProductCreateRequestDTO;
 import com.gerente.gerente.exceptions.ExistingProductException;
@@ -34,6 +35,7 @@ public class ProductService {
         return repository.save(new Product(data));
     }
 
+    @UseCache(key = "products")
     public List<Product> getAll() {
         return repository.findAll();
     }

@@ -1,5 +1,6 @@
 package com.gerente.gerente.services;
 
+import com.gerente.gerente.infra.cache.UseCache;
 import com.gerente.gerente.domain.Employee.Employee;
 import com.gerente.gerente.domain.Transaction.Transaction;
 import com.gerente.gerente.domain.Transaction.TransactionPayment;
@@ -51,6 +52,7 @@ public class TransactionService {
         return repository.save(transaction);
     }
 
+    @UseCache(key = "transactions")
     public List<Transaction> listAll() {
         return repository.findAll();
     }
